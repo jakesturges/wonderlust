@@ -403,6 +403,25 @@ small {
     color: var(--soft-white);
     font-size: .75em;
 }
+
+/* ----------------- GLOBAL STYLES (Jake Sturges) -----------------*/
+/* Hide skip links but make them visible when focused */
+.skip-link {
+    position: absolute;
+    left: -999px; 
+    background: var(--sunset-orange);
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;  
+  }
+  
+  .skip-link:focus {
+    margin-bottom: 10px; 
+    left: 0; 
+  }
+  
+
 /* ----------------- GLOBAL STYLES (MEDIUM) -----------------*/
 @media screen and (min-width: 920px){
     h1 {
